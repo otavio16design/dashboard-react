@@ -4,6 +4,14 @@ import { FaHome } from 'react-icons/fa';
 import { AiFillDashboard } from 'react-icons/ai';
 import { FaShopify } from 'react-icons/fa';
 import { FaProductHunt } from 'react-icons/fa';
+import { FaUser } from 'react-icons/fa';
+import { FaTruck } from 'react-icons/fa';
+import { FaUserCircle } from 'react-icons/fa';
+import { FaCartPlus } from 'react-icons/fa';
+import { FaMoneyBill } from 'react-icons/fa';
+import { FaReceipt } from 'react-icons/fa';
+import { FaBuilding } from 'react-icons/fa';
+import { FaMoneyCheck } from 'react-icons/fa';
 
 const Sidebar = ({
     sidebarOpen,
@@ -23,58 +31,52 @@ const Sidebar = ({
             aria-hidden="true"
             ></i>
         </div>
-        <div className='sideba-menu'>
+        <div className='sidebar-menu'>
+            <h2>Usuário: DecorComics</h2>   
             <div className='sidebar-link active-menu-link'>
-                <FaHome />
-                <a href='#'> Início</a>    
-            </div>         
-            <h2>ADMIN</h2>  
+                <AiFillDashboard />
+                <a href='#'> Dashboard </a>    
+            </div>  
 
             <div className='sidebar-link'>
-                <AiFillDashboard />
-                <a href='#'> Área Administrativa</a>    
+                <FaUser />
+                <a href='#'> Clientes </a>    
             </div> 
             <div className='sidebar-link'>
-                <FaShopify />
-                <a href='#'> Lojas</a>    
+                <FaTruck />
+                <a href='#'> Fornecedores </a>    
+            </div>
+            <div className='sidebar-link'>
+                <FaUserCircle />
+                <a href='#'> Funcionários </a>    
             </div>
             <div className='sidebar-link'>
                 <FaProductHunt />
-                <a href='#'> Produtos</a>    
+                <a href='#'> Produtos </a>    
             </div>
             <div className='sidebar-link'>
-                <FaShopify />
-                <a href='#'> Categorias</a>    
+                <FaCartPlus />
+                <a href='#'> Vendas </a>    
             </div>
             <div className='sidebar-link'>
-                <FaShopify />
-                <a href='#'> Pedidos</a>    
+                <FaMoneyBill />
+                <a href='#'> Contas a Pagar </a>    
             </div>
-
-            <h2>PESSOAS</h2>
             <div className='sidebar-link'>
-                <FaShopify />
-                <a href='#'> Administradores</a>    
+                <FaReceipt />
+                <a href='#'> Contas a Receber </a>    
             </div> 
             <div className='sidebar-link'>
-                <FaShopify />
-                <a href='#'> Usuários</a>    
-            </div> 
+                <FaBuilding />
+                <a href='#'> Banco </a>    
+            </div>
             <div className='sidebar-link'>
-                <FaShopify />
-                <a href='#'> Pagamentos e Custos</a>    
-            </div> 
-            <div className='sidebar-link'>
-                <FaShopify />
-                <a href='#'> A Plataforma</a>    
-            </div> 
-            <div className='sidebar-link'>
-                <FaShopify />
-                <a href='#'> Política de Privacidade</a>    
-            </div> 
+                <FaMoneyCheck />
+                <a href='#'> Forma de Pagamento </a>    
+            </div>
             <div className='sidebar-logout'>
                 <FaShopify />
-                <a href='#'> Sair</a>    
+                <a href='#'> Sair </a>    
             </div>     
         </div>
     </div>

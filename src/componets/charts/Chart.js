@@ -1,33 +1,22 @@
-// import '../../../node_modules/react-vis/dist/style.css'
-import '../../../node_modules/react-vis/dist/style.css'
-// import {XYPlot, XAxis, YAxis, HorizontalGridLines, VerticalGridLines, LineSeries} from 'react-vis';
-import{ XYPlot, LineSeries, XAxis, YAxis, VerticalGridLines, HorizontalGridLines } from 'react-vis'
+import ApexCharts from 'apexcharts'
 const Chart = () => {
-    const data = [
-        {x:0, y: 8},
-        {x:1, y: 5},
-        {x:2, y: 4},
-        {x:3, y: 9},
-        {x:4, y: 1},
-        {x:5, y: 7},
-        {x:6, y: 6},
-        {x:7, y: 3},
-        {x:8, y: 2},
-    ]
-
-    return (
-        <div className={{ marginTop: '15px' }}>
-            <XYPlot height={300} width={300}>
-                <VerticalGridLines />
-                <HorizontalGridLines />
-                <XAxis />
-                <YAxis />
-                <LineSeries data={data} color="red" />
-                <LineSeries data={data} color="purple" />
-                <LineSeries data={data} color="yellow" />
-            </XYPlot>
-        </div>
-    )
+    var options = {
+        chart: {
+          type: 'bar'
+        },
+        series: [
+          {
+            name: 'sales',
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125]
+          }
+        ],
+        xaxis: {
+          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+        }
+      }
+      
+      var chart = new ApexCharts(document.querySelector('#charts'), options)
+      chart.render()
 }
 
 export default Chart;

@@ -12,8 +12,8 @@ return (
         </div>
 
             <div className="navbar-left">
-                <a href="#">Produtos</a>
-                <a href="#">Usuários</a>
+                {/* <a href="#">Produtos</a>
+                <a href="#">Usuários</a> */}
                 <a href="#" className="active-link">Admin</a>
             </div>
             <div className="navbar-right">
